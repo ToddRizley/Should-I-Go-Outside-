@@ -19,17 +19,17 @@ export default class LandingContainer extends Component {
       debugger
   })
 
-
-  //   axios.get(url).then( (response)=> {
-  //   debugger
-  //   console.log('here')
-  //
-  // })
-
     debugger
 
   }
 
+  displayResponse(){
+
+  }
+
+  changeBackgroundImage(){
+    
+  }
   getCurrentWeather(zipcode){
     // const URL = 'http://api.wunderground.com/api/0fb3bafa90d81d9c/conditions/q/' + zipcode + '.json'
 
