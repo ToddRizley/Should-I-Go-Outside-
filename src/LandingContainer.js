@@ -28,7 +28,7 @@ export default class LandingContainer extends Component {
   }
 
   changeBackgroundImage(){
-    
+
   }
   getCurrentWeather(zipcode){
     // const URL = 'http://api.wunderground.com/api/0fb3bafa90d81d9c/conditions/q/' + zipcode + '.json'
