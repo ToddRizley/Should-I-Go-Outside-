@@ -86,16 +86,23 @@ export default class LandingContainer extends Component {
     }
   }
 
-  changeBackgroundImage(goodOrBad){
-
+  changeBackgroundImage(){
+  if (this.state.goodOrBad === 'good') {
+    return <iframe src="//giphy.com/embed/DY75P6LK4OEb6" width="480" height="347" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  } else if (this.state.goodOrBad === 'bad') {
+    return <iframe src="//giphy.com/embed/VIt6FBs98LbH2" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    }
+    // else hide div!
   }
   getCurrentWeather(zipcode){
     // const URL = 'http://api.wunderground.com/api/0fb3bafa90d81d9c/conditions/q/' + zipcode + '.json'
-
   }
   render(){
     return(
       <div className='landing container col-xs-12'>
+        <div>
+          {this.changeBackgroundImage()}
+        </div>
         <h1>Should I Go Outside?</h1>
         <div>
           <h3>Please input your zipcode:</h3>
